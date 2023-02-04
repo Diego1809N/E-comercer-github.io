@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: rgb(249,14,232);
+    background: -moz-linear-gradient(285deg, rgba(249,14,232,1) 0%, rgba(89,7,230,1) 100%);
+    background: -webkit-linear-gradient(285deg, rgba(249,14,232,1) 0%, rgba(89,7,230,1) 100%);
+    background: linear-gradient(285deg, rgba(249,14,232,1) 0%, rgba(89,7,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f90ee8",endColorstr="#5907e6",GradientType=1);;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 150ms ease-in-out;
+}
+a:hover {
+    color: rgb(102, 102, 102);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.main {
+    width: 100%;
+}
+
+span {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: black;
+}
+
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+.button-link {
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: white;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 150ms ease-in-out;
+}
+.button-link:hover {
+  color: black;
+  background-color: transparent;
+  border: 1px solid blue;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 992px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    .button-link {
+        font-size: 1.2rem;
+    }
+}
